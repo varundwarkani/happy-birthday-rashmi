@@ -221,8 +221,8 @@ const animationTimeline = () => {
       "-=2"
     )
     .from(".hat", 0.5, {
-      x: -100,
-      y: 350,
+      x: 150,
+      y: 850,
       rotation: -180,
       opacity: 0
     })
@@ -303,4 +303,4 @@ const animationTimeline = () => {
 };
 
 // Run fetch and animation in sequence
-fetchData();
+//fetchData();

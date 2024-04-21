@@ -7,6 +7,23 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+#celebrate-btn {
+  background-color: rgba(184, 175, 230, 1);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
 .container {
   height: 100vh;
   width: 100vh;
@@ -30,7 +47,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +58,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;

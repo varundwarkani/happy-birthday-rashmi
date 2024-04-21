@@ -11,7 +11,24 @@
 </head>
 
 <body>
+    <div class="container-button">
+        <button id="celebrate-btn">Let's Celebrate</button>
+    </div>
     <div class="container">
+        <audio id="audio" loop>
+            <source src="happybirthday.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            document.getElementById('celebrate-btn').addEventListener('click', function () {
+                var audio = document.getElementById('audio');
+                audio.play();
+                fetchData();
+                this.style.display = 'none';
+            });
+        </script>
+
         <div class="one">
             <h1 class="one">
                 <span data-node-name="greeting">Hey</span>
@@ -47,7 +64,8 @@
             </p>
         </div>
         <div class="six">
-            <img src="img/rash.png" alt="" class="lydia-dp" data-node-name="imagePath">
+            <img src="img/rash.png" alt="" class="lydia-dp" data-node-name="imagePath"
+                style="width: 555px; height: 555px;">
             <img src="img/hat.svg" alt="" class="hat">
             <div class="wish">
                 <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3>
@@ -126,11 +144,6 @@
             <p class="last-smile" data-node-name="outroSmiley">:)</p>
         </div>
     </div>
-
-    <audio autoplay loop volume="0.5">
-        <source src="happybirthday.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
